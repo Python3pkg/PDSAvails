@@ -12,7 +12,7 @@ setup(name='pdsavails',
       license="MIT License",
       install_requires=['requests>=1.0'],
       tests_require=['mock', 'nose'],
-      packages=['david-avails'],
+      packages=['pdsavails'],
       platforms='any',
       classifiers=[
           'Development Status :: 4 - Beta',

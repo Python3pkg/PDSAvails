@@ -14,15 +14,8 @@ except ImportError:
     import simplejson as json
 
 API_VERSION = 'api/v1.0/'
-
-# Change for development testing
-LOCAL_DEVELOPERS = ['Davids-iMac.local', 'kilo.local']
-if socket.gethostname() in LOCAL_DEVELOPERS:
-    DEFAULT_BASE_URL = 'http://localhost:8000/'
-else:
-    DEFAULT_BASE_URL = 'https://avails.premieredigital.net/'
-
-DEFAULT_BASE_URL = 'http://localhost:8000/'
+DEFAULT_BASE_URL = 'https://avails.premieredigital.net/'
+# DEFAULT_BASE_URL = 'http://localhost:8000/' # Uncomment for development
 
 
 
