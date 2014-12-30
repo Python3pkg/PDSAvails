@@ -15,7 +15,7 @@ except ImportError:
 
 API_VERSION = 'api/v1.0/'
 DEFAULT_BASE_URL = 'https://avails.premieredigital.net/'
-DEFAULT_BASE_URL = 'http://localhost:8000/' # Uncomment for development
+# DEFAULT_BASE_URL = 'http://localhost:8000/' # Uncomment for development
 
 
 
@@ -122,7 +122,6 @@ if __name__ == '__main__':
     
     r = avails.validate_credentials()
     print '>>>', r
-
 
 
 
