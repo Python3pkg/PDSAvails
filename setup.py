@@ -4,7 +4,7 @@ except ImportError:
     from distutils.core import setup
 
 setup(name='pdsavails',
-      version='1.0.2',
+      version='1.0.3',
       description='Integration library for PDSAvails',
       author='David Litwin',
       author_email='david@premieredigital.net',

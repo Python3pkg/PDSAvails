@@ -15,7 +15,7 @@ except ImportError:
 
 API_VERSION = 'api/v1.0/'
 DEFAULT_BASE_URL = 'https://avails.premieredigital.net/'
-# DEFAULT_BASE_URL = 'http://localhost:8000/' # Uncomment for development
+DEFAULT_BASE_URL = 'http://localhost:8000/' # Uncomment for development
 
 
 
@@ -100,6 +100,18 @@ class PDSAvails(object):
         return self._build_request(url, method_type)
 
 
+    def get_platform_data(self, platform_id):
+        '''
+        Given a PlatformID, this will return numerical data
+        related to it.
+        '''
+        method_type = 'GET'
+        method_path = 'platform_data/?PlatformID=%s' % platform_id
+        url = os.path.join(self.base_url, method_path)
+        print '>>>', url
+        return self._build_request(url, method_type)
+        
+
 if __name__ == '__main__':
     
     # Quicker to test this way than with Python tests.
@@ -110,6 +122,7 @@ if __name__ == '__main__':
     
     r = avails.validate_credentials()
     print '>>>', r
+
 
 
 

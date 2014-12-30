@@ -24,6 +24,12 @@ class TestPDSAvails(unittest.TestCase):
         res = self.avails.validate_credentials()
         self.assertEquals(res['StatusCode'], 200)
 
+    def test002_get_platform_data(self):
+        """
+        Private method.
+        """
+        pass
+
 
 if __name__ == "__main__":
     unittest.main()
