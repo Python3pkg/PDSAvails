@@ -7,7 +7,7 @@ import time
 import hmac
 import hashlib
 import socket
-import urllib
+import urllib.request, urllib.parse, urllib.error
 try:
     import json
 except ImportError:
@@ -108,7 +108,7 @@ class PDSAvails(object):
         method_type = 'GET'
         method_path = 'platform_data/?PlatformID=%s' % platform_id
         url = os.path.join(self.base_url, method_path)
-        print '>>>', url
+        print('>>>', url)
         return self._build_request(url, method_type)
         
 
@@ -121,7 +121,7 @@ if __name__ == '__main__':
     
     
     r = avails.validate_credentials()
-    print '>>>', r
+    print('>>>', r)
 
 
 

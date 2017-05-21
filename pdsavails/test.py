@@ -3,7 +3,7 @@
 import sys
 import unittest
 import random
-from __init__ import PDSAvails
+from .__init__ import PDSAvails
 
 TEST_API_KEY='58178a3b56814f9d'
 TEST_API_PASS='73f253a65db94cd3'
